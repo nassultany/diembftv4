@@ -8,7 +8,7 @@ config(channel='fifo', clock='Lamport')
 def main():
     configs = []
     config_folder = Path("./config")
-    fname = 'config.csv'
+    fname = 'config.config'
     self.path = config_folder / fname
     with open(self.path, 'r') as file:
         ints = ['num_validators', 'num_clients', 'client_workloads_numrequests', 'client_workloads_delay', 'f',
